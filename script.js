@@ -35,8 +35,8 @@ function moveNoButton(e) {
     noBtn.style.transform = "";
     const btnRect = noBtn.getBoundingClientRect();
     
-    const minMove = 50;
-    const maxMove = 100;
+    const minMove = 100;
+    const maxMove = 300;
     
     // Try up to 10 times to find a valid position
     let moveX, moveY, newLeft, newRight, newTop, newBottom;
