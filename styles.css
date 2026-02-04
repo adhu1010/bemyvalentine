@@ -135,3 +135,169 @@ p {
     background-color: rgba(255, 240, 240, 0.5);
     border-radius: 12px;
 }
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Tablet and smaller desktop */
+@media (max-width: 900px) {
+    .letter-window {
+        width: 95vw;
+        max-width: 600px;
+        padding-top: 140px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    #letter-cat {
+        width: 200px;
+    }
+    
+    .letter-window.final #letter-cat {
+        width: 150px;
+    }
+    
+    .btn,
+    .yesbutton,
+    .nobutton {
+        width: 100px;
+    }
+    
+    .buttons {
+        gap: 20px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #envelope {
+        width: 150px;
+    }
+    
+    #envelopecontainer p {
+        font-size: 18px;
+    }
+    
+    .letter-window {
+        width: 98vw;
+        max-width: none;
+        padding: 15px 10px 0 10px;
+        padding-top: 100px;
+        aspect-ratio: auto;
+        min-height: 70vh;
+    }
+    
+    h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    
+    p {
+        font-size: 24px;
+    }
+    
+    #letter-cat {
+        width: 150px;
+    }
+    
+    .letter-window.final #letter-cat {
+        width: 120px;
+    }
+    
+    .btn,
+    .yesbutton,
+    .nobutton {
+        width: 80px;
+    }
+    
+    .buttons {
+        gap: 15px;
+    }
+    
+    .final-text {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+/* Small mobile phones */
+@media (max-width: 400px) {
+    #envelope {
+        width: 120px;
+    }
+    
+    #envelopecontainer p {
+        font-size: 16px;
+    }
+    
+    .letter-window {
+        padding-top: 80px;
+    }
+    
+    h1 {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    #letter-cat {
+        width: 120px;
+    }
+    
+    .letter-window.final #letter-cat {
+        width: 100px;
+    }
+    
+    .btn,
+    .yesbutton,
+    .nobutton {
+        width: 65px;
+    }
+    
+    .buttons {
+        gap: 10px;
+    }
+    
+    .final-text {
+        font-size: 14px;
+    }
+}
+
+/* Landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .letter-window {
+        padding-top: 60px;
+        min-height: auto;
+        aspect-ratio: auto;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    #letter-cat {
+        width: 100px;
+    }
+    
+    .letter-window.final #letter-cat {
+        width: 80px;
+    }
+    
+    .btn,
+    .yesbutton,
+    .nobutton {
+        width: 70px;
+    }
+    
+    .final-text {
+        font-size: 14px;
+    }
+}
