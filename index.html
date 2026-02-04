@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Valentine Letter</title>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet"
+    />
     </head>
     <body>
-        <script src="script.js"></script>
-        <div id="envolopecontainer">
-            
+        <div id="envelopecontainer">
+            <img src="envelope.png" alt="envelope" id="envelope">
+            <p>♡ Letter for You ♡</p>
         </div>
+        <div id="lettercontainer">
+            <div class="letter-window" id="letterbox">
+                <h1 id="letter-title">♡ Will You Be My Valentine ♡</h1>
+                <img src="cat_heart.gif" alt="cat" id="letter-cat" class="cat">
+                <div class="buttons" id="letter-buttons">
+                    <img src="yes.png" alt="yes" class="btn yesbutton">
+                    <div class="no-wrapper">
+                        <img src="no.png" alt="no" class="btn nobutton">
+                    </div>
+                </div>
+                <p id="final-text" class="final-text" style="display:none">
+                    <strong>Yay! I'm so happy to be your Valentine! 💖🐾</strong>
+                </p>
+                
+            </div>
+
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
